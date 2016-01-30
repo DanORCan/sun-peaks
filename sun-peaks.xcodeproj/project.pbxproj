@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		432B8E481C5D33C1009A93AC /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432B8E471C5D33C1009A93AC /* DetailVC.swift */; };
 		43A1C8AE1C59C616001FA702 /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1C8AD1C59C616001FA702 /* BlueButton.swift */; };
 		43A8C5B11C5737A50019EFD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A8C5B01C5737A50019EFD2 /* AppDelegate.swift */; };
 		43A8C5B31C5737A50019EFD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A8C5B21C5737A50019EFD2 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		432B8E471C5D33C1009A93AC /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		43A1C8AD1C59C616001FA702 /* BlueButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
 		43A8C5AD1C5737A50019EFD2 /* sun-peaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sun-peaks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A8C5B01C5737A50019EFD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				43A8C5B91C5737A50019EFD2 /* LaunchScreen.storyboard */,
 				43A8C5BC1C5737A50019EFD2 /* Info.plist */,
 				43A1C8AD1C59C616001FA702 /* BlueButton.swift */,
+				432B8E471C5D33C1009A93AC /* DetailVC.swift */,
 			);
 			path = "sun-peaks";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A8C5B31C5737A50019EFD2 /* ViewController.swift in Sources */,
+				432B8E481C5D33C1009A93AC /* DetailVC.swift in Sources */,
 				43A8C5B11C5737A50019EFD2 /* AppDelegate.swift in Sources */,
 				43A1C8AE1C59C616001FA702 /* BlueButton.swift in Sources */,
 			);
