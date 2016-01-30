@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43A1C8AE1C59C616001FA702 /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1C8AD1C59C616001FA702 /* BlueButton.swift */; };
 		43A8C5B11C5737A50019EFD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A8C5B01C5737A50019EFD2 /* AppDelegate.swift */; };
 		43A8C5B31C5737A50019EFD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A8C5B21C5737A50019EFD2 /* ViewController.swift */; };
 		43A8C5B61C5737A50019EFD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A8C5B41C5737A50019EFD2 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43A1C8AD1C59C616001FA702 /* BlueButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
 		43A8C5AD1C5737A50019EFD2 /* sun-peaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sun-peaks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A8C5B01C5737A50019EFD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43A8C5B21C5737A50019EFD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				43A8C5B71C5737A50019EFD2 /* Assets.xcassets */,
 				43A8C5B91C5737A50019EFD2 /* LaunchScreen.storyboard */,
 				43A8C5BC1C5737A50019EFD2 /* Info.plist */,
+				43A1C8AD1C59C616001FA702 /* BlueButton.swift */,
 			);
 			path = "sun-peaks";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			files = (
 				43A8C5B31C5737A50019EFD2 /* ViewController.swift in Sources */,
 				43A8C5B11C5737A50019EFD2 /* AppDelegate.swift in Sources */,
+				43A1C8AE1C59C616001FA702 /* BlueButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +289,7 @@
 				43A8C5C11C5737A50019EFD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
