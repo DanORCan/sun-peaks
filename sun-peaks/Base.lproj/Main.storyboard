@@ -112,6 +112,9 @@
                                             <constraint firstAttribute="width" constant="100" id="gDs-3j-ndV"/>
                                         </constraints>
                                         <state key="normal" title="SUNDANCE"/>
+                                        <connections>
+                                            <segue destination="m6c-4e-5aO" kind="show" id="NKg-BN-Adp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -325,8 +328,53 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
             </objects>
             <point key="canvasLocation" x="600" y="1257"/>
         </scene>
+        <!--DetailVC-->
+        <scene sceneID="Hxs-Zp-fsg">
+            <objects>
+                <viewController id="m6c-4e-5aO" customClass="DetailVC" customModule="sun_peaks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6ej-0x-xjo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ijy-kM-NIg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jIT-wh-3bk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0854" translatesAutoresizingMaskIntoConstraints="NO" id="exe-gy-BUQ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Hh8-cc-sAP"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHW-TU-P3Z">
+                                <rect key="frame" x="20" y="13" width="46" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backPressed:" destination="ffH-4o-yUf" eventType="touchUpInside" id="C5C-GA-25v"/>
+                                    <action selector="backPressed:" destination="UzK-9s-l0b" eventType="touchUpInside" id="ZZJ-Pk-0Za"/>
+                                    <action selector="backPressed:" destination="m6c-4e-5aO" eventType="touchUpInside" id="hsI-8r-vPN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="exe-gy-BUQ" firstAttribute="leading" secondItem="jIT-wh-3bk" secondAttribute="leading" id="8TB-Z1-GAf"/>
+                            <constraint firstItem="RHW-TU-P3Z" firstAttribute="top" secondItem="jIT-wh-3bk" secondAttribute="topMargin" constant="13" id="BAH-G9-lAO"/>
+                            <constraint firstAttribute="trailing" secondItem="exe-gy-BUQ" secondAttribute="trailing" id="JES-c5-ezy"/>
+                            <constraint firstItem="exe-gy-BUQ" firstAttribute="top" secondItem="jIT-wh-3bk" secondAttribute="top" id="dqH-XA-HeU"/>
+                            <constraint firstItem="RHW-TU-P3Z" firstAttribute="leading" secondItem="jIT-wh-3bk" secondAttribute="leadingMargin" id="kWU-iz-Wpe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZwD-ZT-Wsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1211" y="1197"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="IMG_0854" width="3264" height="2448"/>
         <image name="IMG_2543_01" width="800" height="534"/>
         <image name="IMG_2615" width="800" height="534"/>
         <image name="Screen Shot 2016-01-31 at 00.51.02" width="1708" height="736"/>
