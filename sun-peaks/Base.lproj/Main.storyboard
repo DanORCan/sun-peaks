@@ -21,10 +21,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2543_01" translatesAutoresizingMaskIntoConstraints="NO" id="A2b-Nv-IlX">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <stackView opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="6fo-QP-BCK">
+                            <stackView opaque="NO" tag="1" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="6fo-QP-BCK">
                                 <rect key="frame" x="20" y="20" width="208" height="219"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5XL-2G-omn">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5XL-2G-omn">
                                         <rect key="frame" x="0.0" y="0.0" width="208" height="219"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="A6h-Oy-tx7">
@@ -44,16 +44,16 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XQe-2P-lea">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XQe-2P-lea">
                                                 <rect key="frame" x="0.0" y="48" width="208" height="139"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SUN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOC-Pk-WeA">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOC-Pk-WeA">
                                                         <rect key="frame" x="0.0" y="0.0" width="208" height="70"/>
                                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="60"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PEAKS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBZ-jb-ws3">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PEAKS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBZ-jb-ws3">
                                                         <rect key="frame" x="0.0" y="70" width="208" height="70"/>
                                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="60"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -61,7 +61,7 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="NfX-YC-J8D">
+                                            <stackView opaque="NO" tag="1" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="NfX-YC-J8D">
                                                 <rect key="frame" x="0.0" y="199" width="143" height="20"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="dMs-yR-UlJ">
@@ -102,6 +102,9 @@
                                             <constraint firstAttribute="width" constant="100" id="mXs-wF-IhN"/>
                                         </constraints>
                                         <state key="normal" title="MORRISEY"/>
+                                        <connections>
+                                            <segue destination="UzK-9s-l0b" kind="show" id="80u-M6-C3o"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABn-Ds-nXW" customClass="BlueButton" customModule="sun_peaks" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="90" width="100" height="30"/>
@@ -151,17 +154,43 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aL5-S6-XBU">
                                 <rect key="frame" x="20" y="188" width="560" height="392"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="TOD MOUNTAIN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixd-RV-aWK">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="229"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TOD MOUNTAIN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixd-RV-aWK">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="213"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="429"/>
+                                        </variation>
+                                        <variation key="widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="760" height="278"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="760" height="78"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="760" height="478"/>
+                                        </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="28" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfR-mq-Tbs">
-                                        <rect key="frame" x="0.0" y="229" width="560" height="164"/>
-                                        <string key="text">Mount Tod 2155 m (7070 ft), commonly known as Tod Mountain, is a summit 50km northeast of Kamloops, British Columbia, Canada. Located northeast of the junction of Louis and McGillivray Creeks, it is part of the upland area between the Interior Plateau (W) and the Monashee Mountains (E) known as the Shuswap Highland, the mountain is the highest of three summits comprising the Sun Peaks alpine ski resort.    The mountain is named for John Tod, one of the most prominent of the fur traders assigned to the New Caledonia fur district. He first joined the Hudson's Bay Company in 1813. He was in charge of Fort McLeod from 1823 to 1832, and in charge of Fort Kamloops (1841-43). His retirement home in Victoria, on which he began construction in 1850, is the oldest inhabited house in British Columbia.</string>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfR-mq-Tbs">
+                                        <rect key="frame" x="0.0" y="213" width="560" height="180"/>
+                                        <string key="text">Mount Tod 2155 m (7070 ft), commonly known as Tod Mountain, is a summit 50km northeast of Kamloops, British Columbia, Canada. Located northeast of the junction of Louis and McGillivray Creeks, it is part of the upland area between the Interior Plateau (W) and the Monashee Mountains (E) known as the Shuswap Highland, the mountain is the highest of three summits comprising the Sun Peaks alpine ski resort.
+
+The mountain is named for John Tod, one of the most prominent of the fur traders assigned to the New Caledonia fur district. He first joined the Hudson's Bay Company in 1813. He was in charge of Fort McLeod from 1823 to 1832, and in charge of Fort Kamloops (1841-43). His retirement home in Victoria, on which he began construction in 1850, is the oldest inhabited house in British Columbia.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="429" width="560" height="164"/>
+                                        </variation>
+                                        <variation key="widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="278" width="760" height="115"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="78" width="760" height="115"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="478" width="760" height="115"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                             </stackView>
@@ -191,10 +220,116 @@
             </objects>
             <point key="canvasLocation" x="1236" y="490"/>
         </scene>
+        <!--DetailVC-->
+        <scene sceneID="dqV-yC-13s">
+            <objects>
+                <viewController id="UzK-9s-l0b" customClass="DetailVC" customModule="sun_peaks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B1P-Ic-VSQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="uZS-vA-nFB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="laU-PS-WNb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Screen Shot 2016-01-31 at 00.51.02" translatesAutoresizingMaskIntoConstraints="NO" id="bsn-pW-ucD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="187" id="qN1-An-wuG"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qN1-An-wuG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="qN1-An-wuG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="800" height="128"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09l-gm-GYg">
+                                <rect key="frame" x="30" y="20" width="46" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backPressed:" destination="UzK-9s-l0b" eventType="touchUpInside" id="dDL-pz-TbU"/>
+                                    <action selector="backPressed:" destination="ffH-4o-yUf" eventType="touchUpInside" id="ocP-Ai-qvV"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Fhn-Jg-eGO">
+                                <rect key="frame" x="20" y="153" width="560" height="246"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MORRISEY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5H-ce-jzT">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdL-3J-6H6">
+                                        <rect key="frame" x="0.0" y="34" width="560" height="213"/>
+                                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uZS-vA-nFB" firstAttribute="top" secondItem="Fhn-Jg-eGO" secondAttribute="bottom" constant="20" id="6Ia-2u-9el"/>
+                            <constraint firstItem="bsn-pW-ucD" firstAttribute="leading" secondItem="laU-PS-WNb" secondAttribute="leading" id="EPF-YC-ctL"/>
+                            <constraint firstItem="bsn-pW-ucD" firstAttribute="top" secondItem="laU-PS-WNb" secondAttribute="top" id="Rzb-AL-6Pw"/>
+                            <constraint firstItem="Fhn-Jg-eGO" firstAttribute="leading" secondItem="laU-PS-WNb" secondAttribute="leadingMargin" id="V25-yW-Wzm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fhn-Jg-eGO" secondAttribute="trailing" id="Xkb-wL-vct"/>
+                            <constraint firstAttribute="trailing" secondItem="bsn-pW-ucD" secondAttribute="trailing" id="YZA-aN-2HB"/>
+                            <constraint firstAttribute="trailing" secondItem="bsn-pW-ucD" secondAttribute="trailing" id="d9f-y6-Xv2"/>
+                            <constraint firstItem="bsn-pW-ucD" firstAttribute="top" secondItem="laU-PS-WNb" secondAttribute="top" id="iPr-00-7ZK"/>
+                            <constraint firstItem="bsn-pW-ucD" firstAttribute="leading" secondItem="laU-PS-WNb" secondAttribute="leading" id="qSp-sN-V8k"/>
+                            <constraint firstItem="Fhn-Jg-eGO" firstAttribute="top" secondItem="bsn-pW-ucD" secondAttribute="bottom" constant="25" id="qZP-Mv-a36"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EPF-YC-ctL"/>
+                                <exclude reference="Rzb-AL-6Pw"/>
+                                <exclude reference="YZA-aN-2HB"/>
+                                <exclude reference="d9f-y6-Xv2"/>
+                                <exclude reference="iPr-00-7ZK"/>
+                                <exclude reference="qSp-sN-V8k"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="EPF-YC-ctL"/>
+                                <include reference="Rzb-AL-6Pw"/>
+                                <include reference="d9f-y6-Xv2"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="YZA-aN-2HB"/>
+                                <include reference="iPr-00-7ZK"/>
+                                <include reference="qSp-sN-V8k"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gts-6A-Efp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600" y="1257"/>
+        </scene>
     </scenes>
     <resources>
         <image name="IMG_2543_01" width="800" height="534"/>
         <image name="IMG_2615" width="800" height="534"/>
+        <image name="Screen Shot 2016-01-31 at 00.51.02" width="1708" height="736"/>
         <image name="compass" width="35" height="35"/>
     </resources>
 </document>
